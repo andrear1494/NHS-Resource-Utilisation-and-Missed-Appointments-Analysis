@@ -21,8 +21,8 @@ Since we were interested in understanding trends and patterns in the newtwork, w
 Analysis has been divided into univariate and bivariate statistics to understand the trend in the variation of appointments and their attributes over time and across networks.  We looked at the period June 2020-June 2021 to minimise anomalies caused by Covid-19.
 
 **Diagnostic Analysis and Insights includes**: 
-**Utilization Trends**: Analysis related to the utilization of services. 
-**Missed Appointments**: Analysis related to missed appointments and potential causes.
-**Sentiment Analysis** involving external data sources like Twitter (X) using TextBlob library. 
+- **Utilization Trends**: Analysis related to the utilization of services. 
+- **Missed Appointments**: Analysis related to missed appointments and potential causes.
+- **Sentiment Analysis** involving external data sources like Twitter (X) using TextBlob library. 
 
 
