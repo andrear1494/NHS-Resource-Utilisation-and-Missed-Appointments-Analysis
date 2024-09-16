@@ -8,13 +8,16 @@ This specific analysis will inform decision-making regarding the utilisation tre
 This report will inform decision-making regarding budget allotment, whether to expand capacity or improve utilisation of existing resources within the NHS.
 
 ## Data Sources
-The analysis encompasses the use of appointment datasets at different granularities : **actual_duration.csv**, **appointment_regional.csv**, **national_categories.csv** as primary appointment datasets (AD, NC, NR )  and integrates findings with additional FTE (Full Time Equivalent) data (GP_STATS)  to assess the primary care workforce utilisation. 
+The analysis encompasses the use of appointment datasets at different granularities :
+- **actual_duration.csv**, **appointment_regional.csv**, **national_categories.csv** as primary appointment datasets (AD, NC, NR )  and integrates findings with additional FTE (Full Time Equivalent) data (GP_STATS)  to assess the primary care workforce utilisation. 
 GP_STATS is an extract from the NHS GENERAL PRACTICE STATS. Here, you can see the full bulletin publication:   
 https://digital.nhs.uk/data-and-information/publications/statistical/general-and-personal-medical-services
 Note that the data collection methodologies have changed since December 2021. The series are now published monthly and aggregated by Regions and Sub ICB Location instead of quarterly. This version is an extract of the data available with these granularities from December 2021 to June 2022.
 
 Geographic data have also been imported to extract regional and sub-ICB level information, providing keys to merge all datasets using ICB_ons_code or sub_ICB_location.
 https://geoportal.statistics.gov.uk/documents/46b634b42ceb45cbbfbe9c960fb77ec9/about
+
+**Tweet.csv**: contains scraped data from Twitter (X) and is used for Sentiment Analysis. 
 
 ## Analysis
 Since we were interested in understanding trends and patterns in the newtwork, we  focused on analysis of locations, trends over time, appointemnt types and service setting provider.  
