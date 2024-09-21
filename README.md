@@ -38,6 +38,10 @@ The analysis integrates multiple datasets at different granularities. The primar
 
 **Metadata**: See `metadata_nhs.md` for detailed information on each dataset.
 
+## Tools Used 
+Python used for data ingestion, wrangling and analysis. 
+GitHub for version control and project management
+
 ## Analysis
 Since we were interested in understanding trends and patterns in the newtwork, we focused on analysis of locations, trends over time, appointemnt types and service setting provider.
 Analysis has been divided into univariate and bivariate statistics to understand the trend in the variation of appointments and their attributes over time and across networks. We looked at the period June 2020-June 2021 to minimise anomalies caused by Covid-19.
