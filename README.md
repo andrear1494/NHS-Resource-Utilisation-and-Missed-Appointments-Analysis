@@ -1,23 +1,41 @@
-**This is my first work assignment using Python!**
+# Project Overview
 
-## Project Overview
-The National Health Service (NHS) aims to address missed appointments, known as Did Not Attends (DNAs), to enhance healthcare accessibility, efficiency, and resource utilisation.
-This specific analysis will inform decision-making regarding the utilisation trends of each component of the network. In particular, it will focus on two overarching objects: 
-1.	Evaluate whether there has been adequate staff and capacity and if this related to DNAs 
-2.	Determine the resource utilisation across the network 
-This report will inform decision-making regarding budget allotment, whether to expand capacity or improve utilisation of existing resources within the NHS.
+This project aims to analyze missed appointments, also known as Did Not Attends (DNAs), within the National Health Service (NHS) network. By focusing on key components of appointment scheduling and workforce utilization, the analysis will help the NHS improve healthcare accessibility, efficiency, and resource utilization. The results of this analysis will inform decision-making about budget allocation, expansion of capacity, and the optimal use of existing resources across the NHS.
+
+### Key Objectives:
+1. **Evaluate Staff Capacity & DNAs**  
+   Assess whether there has been sufficient staff and appointment capacity, and how these factors relate to the rate of missed appointments (DNAs).
+   
+2. **Assess Resource Utilization Across the Network**  
+   Determine the level of resource utilization in healthcare facilities across the NHS network, identifying gaps or inefficiencies.
 
 ## Data Sources
-The analysis encompasses the use of appointment datasets at different granularities :
-- **actual_duration.csv**, **appointment_regional.csv**, **national_categories.csv** as primary appointment datasets (AD, NC, NR )  and integrates findings with additional FTE (Full Time Equivalent) data (GP_STATS)  to assess the primary care workforce utilisation. 
-GP_STATS is an extract from the NHS GENERAL PRACTICE STATS. Here, you can see the full bulletin publication:   
-https://digital.nhs.uk/data-and-information/publications/statistical/general-and-personal-medical-services
-Note that the data collection methodologies have changed since December 2021. The series are now published monthly and aggregated by Regions and Sub ICB Location instead of quarterly. This version is an extract of the data available with these granularities from December 2021 to June 2022.
 
-Geographic data have also been imported to extract regional and sub-ICB level information, providing keys to merge all datasets using ICB_ons_code or sub_ICB_location.
-https://geoportal.statistics.gov.uk/documents/46b634b42ceb45cbbfbe9c960fb77ec9/about
+The analysis integrates multiple datasets at different granularities. The primary datasets used include:
 
-**Tweet.csv**: contains scraped data from Twitter (X) and is used for Sentiment Analysis. 
+### Primary Datasets:
+1. **actual_duration.csv (AD)**     
+2. **appointment_regional.csv (AR)**     
+3. **national_categories.csv (NC)**  
+
+### Supplementary Datasets:
+1. **GP_STATS**  
+   Provides Full-Time Equivalent (FTE) data, focusing on NHS general practice workforce utilization. The dataset is extracted from the NHS General and Personal Medical Services statistics publication. It contains data aggregated by region and Sub ICB location from December 2021 to June 2022. Please note that data collection methodologies changed after December 2021.
+
+   For more details on GP_STATS, refer to the full bulletin publication:  
+   [NHS General and Personal Medical Services](https://digital.nhs.uk/data-and-information/publications/statistical/general-and-personal-medical-services)
+
+2. **Geographic Data**  
+   Geographic data has been imported from the UK GeoPortal to provide additional regional and sub-ICB information. These geographic codes (ICB_ons_code, sub_ICB_location) are essential for merging and analyzing datasets across different geographic levels.
+
+   Learn more about the geographic data:  
+   [GeoPortal Documentation](https://geoportal.statistics.gov.uk/documents/46b634b42ceb45cbbfbe9c960fb77ec9/about)
+
+### Social Media Dataset:
+1. **Tweet.csv**  
+   Scraped data from Twitter (now X) used for sentiment analysis related to NHS appointments and healthcare access.
+   
+### Metadata: See metadata_nhs
 
 ## Analysis
 Since we were interested in understanding trends and patterns in the newtwork, we  focused on analysis of locations, trends over time, appointemnt types and service setting provider.  
