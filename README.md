@@ -44,8 +44,7 @@ GitHub for version control and project management
 
 ## Analysis
 Since we were interested in understanding trends and patterns in the newtwork, we focused on analysis of locations, trends over time, appointemnt types and service setting provider.
-Analysis has been divided into univariate and bivariate statistics to understand the trend in the variation of appointments and their attributes over time and across networks. We looked at the period June 2020-June 2021 to minimise anomalies caused by Covid-19.
-
+Analysis has been divided into univariate and bivariate statistics to understand the trend in the variation of appointments and their attributes over time and across networks. 
 The analysis covers the period from June 2020 to June 2021, to minimize anomalies caused by the COVID-19 pandemic.
 
 ### Diagnostic Analysis and Insights
